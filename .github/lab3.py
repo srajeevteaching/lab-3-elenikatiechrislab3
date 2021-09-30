@@ -13,7 +13,7 @@ travel_distance = input("Enter travel distance in miles")
 travel_distance = float(travel_distance)
 if travel_distance > 3000 or travel_distance < 10:
     print("invalid travel distance")
-    sys.exit
+    sys.exit()
 
 price = 0
 price = float(price)
@@ -26,4 +26,5 @@ elif package_weight > 6 and package_weight <= 10:
 elif package_weight > 10 and package_weight <= 20:
     price = 4.80
 
-print(price)
+total = ((travel_distance/500) * price)
+print ("your total is $ %.2f" %total)
